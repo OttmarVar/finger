@@ -1,0 +1,489 @@
+@{
+ViewData["Title"] = "Home Page";
+}
+
+<section class="hero is-primary">
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns is-variable is-8">
+				<div class="column is-two-thirds">
+					<h1 class="title">
+						This is People X: Prints bois
+					</h1>
+					<h2 class="subtitle">
+						it's wonderfull
+					</h2>
+				</div>
+				<div class="column">
+					<a id="formPrintToggle" class="button is-primary is-medium is-centered">
+						<span class="icon is-medium">
+							<i class="fas fa-upload"></i>
+						</span>
+						<span>Upload a new print</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<br />
+<div id="fromPrint">
+	<div class="field is-grouped">
+
+
+		
+
+		<!-- <p class="has-icons-left control is-expanded">
+			<input class="input" type="text" placeholder="Type of print">
+			<span class="icon is-small is-left">
+				<i class="fas fa-hand-point-up"></i>
+			</span>
+		</p> -->
+
+		<p class="has-icons-left control is-expanded">
+			<input class="input" type="text" placeholder="Name of the print">
+			<span class="icon is-small is-left">
+				<i class="fas fa-hand-point-up"></i>
+			</span>
+		</p>
+		<div class="control is-expanded">
+			<div class="select is-fullwidth">
+				<select class="">
+					<option>Type of the print</option>
+					
+					<option>Right Thumb</option>
+					<option>Right Index</option>
+					<option>Right Middle</option>
+					<option>Right Ring</option>
+					<option>Right Pinky</option>
+					<option>Right Palm</option>
+					<option>Left Thumb</option>
+					<option>Left Index</option>
+					<option>Left Middle</option>
+					<option>Left Ring</option>
+					<option>Left Pinky</option>
+					<option>Left Palm</option>
+				</select>
+			</div>
+		</div>
+		<div class="file control ">
+			<label class="file-label">
+				<input class="file-input" type="file" name="resume">
+				<span class="file-cta">
+					<span class="file-icon">
+						<i class="fas fa-upload"></i>
+					</span>
+					<span class="file-label">
+						Print file
+					</span>
+				</span>
+			</label>
+		</div>
+		<p class="control">
+			<a class="button is-info">
+				Upload
+			</a>
+		</p>
+	</div>
+</div>
+
+<br />
+
+<div class="columns is-variable is-8">
+	<div class="column">
+		<div class="columns">
+			<div class="column">
+				<div class="card">
+					<header class="card-header">
+						<div class="file control ">
+							
+							<label class="file-label">
+								<input class="file-input" type="file" name="resume">
+								<p class="card-header-title file">
+
+									Upload a new print
+								</p>
+
+								<a  class="card-header-icon file" aria-label="more options">
+									<span class="icon file card-header-icon file">
+										<i class="fas fa-upload file" aria-hidden="true"></i>
+									</span>
+								</a>
+							</div>
+							
+						</header>
+						<div class="card-content">
+
+							<div class="content has-text-centered">
+								<div class="control ">
+									<div class="select is-fullwidth">
+										<select>
+											<option>Type of the print</option>
+											<option>Right Thumb</option>
+											<option>Right Index</option>
+											<option>Right Middle</option>
+											<option>Right Ring</option>
+											<option>Right Pinky</option>
+											<option>Right Palm</option>
+											<option>Left Thumb</option>
+											<option>Left Index</option>
+											<option>Left Middle</option>
+											<option>Left Ring</option>
+											<option>Left Pinky</option>
+											<option>Left Palm</option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<p class="has-icons-left control">
+									<input class="input" type="text" placeholder="Name of print">
+									<span class="icon is-small is-left">
+										<i class="fas fa-hand-point-up"></i>
+									</span>
+								</p>
+
+
+							</div>
+
+						</div>
+						<footer class="card-footer">
+							<a href="#" class="card-footer-item">Save</a>
+							<a href="#" class="card-footer-item">Cancel</a>
+						</footer>
+					</div>
+					<br />
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+
+							<div class="content has-text-centered">
+								<p class="title is-5">Print #</p>
+								<a asp-area="" asp-controller="MyPeople" asp-action="PrintDisplay" class="button is-medium" style="margin-right: 25%;">
+									<span class="icon is-small">
+										<i class="fas fa-pencil-alt"></i>
+									</span>
+								</a>
+								<a class="button is-medium">
+									<span class="icon is-small">
+										<i class="fas fa-trash-alt"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+
+							<div class="content has-text-centered">
+								<p class="title is-5">Print #</p>
+								<a asp-area="" asp-controller="MyPeople" asp-action="PrintDisplay" class="button is-medium" style="margin-right: 25%;">
+									<span class="icon is-small">
+										<i class="fas fa-pencil-alt"></i>
+									</span>
+								</a>
+								<a class="button is-medium">
+									<span class="icon is-small">
+										<i class="fas fa-trash-alt"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="columns">
+				<div class="column">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+
+							<div class="content has-text-centered">
+								<p class="title is-5">Print #</p>
+								<a asp-area="" asp-controller="MyPeople" asp-action="PrintDisplay" class="button is-medium" style="margin-right: 25%;">
+									<span class="icon is-small">
+										<i class="fas fa-pencil-alt"></i>
+									</span>
+								</a>
+								<a class="button is-medium">
+									<span class="icon is-small">
+										<i class="fas fa-trash-alt"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+
+							<div class="content has-text-centered">
+								<p class="title is-5">Print #</p>
+								<a asp-area="" asp-controller="MyPeople" asp-action="PrintDisplay" class="button is-medium" style="margin-right: 25%;">
+									<span class="icon is-small">
+										<i class="fas fa-pencil-alt"></i>
+									</span>
+								</a>
+								<a class="button is-medium">
+									<span class="icon is-small">
+										<i class="fas fa-trash-alt"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+<!--
+<div class="tile is-ancestor">
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="tile is-ancestor">
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="content has-text-centered">
+                        <p class="title is-5">Joe Smith</p>
+                        <a class="button is-medium" style="margin-right: 25%;">
+                            <span class="icon is-small">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </a>
+                        <a class="button is-medium">
+                            <span class="icon is-small">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>-->
